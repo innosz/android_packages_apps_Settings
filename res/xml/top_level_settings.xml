@@ -224,4 +224,16 @@
         settings:highlightableMenuKey="@string/menu_key_support"
         settings:controller="com.android.settings.support.SupportPreferenceController"/>
 
+    <com.android.settings.widget.HomepagePreference
+        android:key="top_level_innosz_restrict"
+        android:order="110"
+        android:title="@string/innosz_restrict_title"
+        android:summary="@string/innosz_restrict_summary"
+        android:icon="@drawable/ic_settings_system_dashboard_white"
+        settings:controller="com.android.settings.innosz.InnoszRestrictPreferenceController">
+        <intent
+            android:targetPackage="com.innosz.restrict"
+            android:targetClass="com.innosz.restrict.SyncActivity" />
+    </com.android.settings.widget.HomepagePreference>
+
 </PreferenceScreen>
